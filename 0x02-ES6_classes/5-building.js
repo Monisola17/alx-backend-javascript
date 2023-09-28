@@ -5,7 +5,7 @@ class Building {
       throw new TypeError('sqft must be a number');
     }
 
-    // Store the attribute with an underscore
+    // Store 'sqft' with an underscore
     this._sqft = sqft;
   }
 
@@ -20,4 +20,4 @@ class Building {
   }
 }
 
-export default Building;
+export default Building;`
