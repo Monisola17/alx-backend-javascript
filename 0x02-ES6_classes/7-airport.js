@@ -1,24 +1,26 @@
-class Airport {
+export default class Airport {
   constructor(name, code) {
-    // Store attributes with underscores
-    this._name = name;
-    this._code = code;
+    this.name = name;
+    this.code = code;
   }
 
-  // Default string description returns the airport code
-  toString() {
-    return this._code;
-  }
-
-  // Getter for the 'name' attribute
   get name() {
     return this._name;
   }
 
-  // Getter for the 'code' attribute
+  set name(value) {
+    this._name = value;
+  }
+
   get code() {
     return this._code;
   }
-}
 
-export default Airport;
+  set code(value) {
+    this._code = value;
+  }
+
+  get [Symbol.toStringTag]() {
+    return this._code;
+  }
+}
