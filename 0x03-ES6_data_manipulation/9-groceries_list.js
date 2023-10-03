@@ -1,4 +1,4 @@
-iconst groceriesList = () => {
+const groceriesList = () => {
   const map = new Map();
   map.set('Apples', 10);
   map.set('Tomatoes', 10);
