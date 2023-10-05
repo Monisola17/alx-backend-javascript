@@ -63,7 +63,7 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
   return msg;
 }
 
-type Subjects = 'Math' | 'History';
+export type Subjects = 'Math' | 'History';
 
 function teachClass(todayClass: Subjects): string {
   if (todayClass === 'Math') {
